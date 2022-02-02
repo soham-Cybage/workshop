@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator using js</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="center">
+
+
+        <form name="forms" class="for">
+            <h1> Calculator</h1>
+
+            <input name="display" id="display" type="text">
+
+
+            <div class="buttons">
+
+                <div id="standard" class="tabcontent">
+                    <input type="button" value="9" onclick="designate('9')">
+
+
+                    <input type="button" value="8" onclick="designate('8')">
+
+
+                    <input type="button" value="7" onclick="designate('7')">
+
+
+                    <input type="button" value="DEL" onclick="del()"><br>
+
+
+                    <input type="button" value="AC" onclick="ac()">
+
+
+                    <input type="button" value="6" onclick="designate('6')">
+
+
+                    <input type="button" value="5" onclick="designate('5')">
+
+
+                    <input type="button" value="4" onclick="designate('4')"><br>
+
+
+                    <input type="button" value="-" onclick="designate('-')">
+
+
+                    <input type="button" value="+" onclick="designate('+')">
+
+
+                    <input type="button" value="3" onclick="designate('3')">
+
+
+                    <input type="button" value="2" onclick="designate('2')"><br>
+
+
+                    <input type="button" value="1" onclick="designate('1')">
+
+
+                    <input type="button" value="*" onclick="designate('*')">
+
+
+                    <input type="button" value="/" onclick="designate('/')">
+
+
+                    <input type="button" value="0" onclick="designate('0')"><br>
+
+
+                    <input type="button" value="." onclick="designate('.')">
+
+
+                    <input type="button" value="(" onclick="designate('(')">
+
+
+                    <input type="button" value=")" onclick="designate(')')">
+
+
+                    <input type="button" value="&#8730;" onclick="sqrt()"><br>
+                    <input type="button" value="=" onclick="equal()">
+
+                </div>
+
+                
+
+                <div id="scientific" class="tabcontent">
+                    <input type="button" value="9" onclick="designate('9')">
+
+
+                    <input type="button" value="8" onclick="designate('8')">
+
+
+                    <input type="button" value="7" onclick="designate('7')">
+
+
+                    <input type="button" value="DEL" onclick="del()"><br>
+
+
+                    <input type="button" value="AC" onclick="ac()">
+
+
+                    <input type="button" value="6" onclick="designate('6')">
+
+
+                    <input type="button" value="5" onclick="designate('5')">
+
+
+                    <input type="button" value="4" onclick="designate('4')"><br>
+
+
+                    <input type="button" value="-" onclick="designate('-')">
+
+
+                    <input type="button" value="+" onclick="designate('+')">
+
+
+                    <input type="button" value="3" onclick="designate('3')">
+
+
+                    <input type="button" value="2" onclick="designate('2')"><br>
+
+
+                    <input type="button" value="1" onclick="designate('1')">
+
+
+                    <input type="button" value="*" onclick="designate('*')">
+
+
+                    <input type="button" value="/" onclick="designate('/')">
+
+
+                    <input type="button" value="0" onclick="designate('0')"><br>
+
+
+                    <input type="button" value="." onclick="designate('.')">
+
+
+                    <input type="button" value="(" onclick="designate('(')">
+
+
+                    <input type="button" value=")" onclick="designate(')')">
+
+
+                    <input type="button" value="&#8730;" onclick="sqrt()"><br>
+
+                    <input type="button" value="%" onclick="per()">
+
+
+                    <input type="button" value="x!" onclick="fact()">
+
+
+                    <input type="button" value="rad" onclick="rad()">
+
+
+                    <input type="button" value="x&#178;" onclick="square()"><br>
+
+
+                    <input type="button" value="log" onclick="logarithm()">
+
+
+                    <input type="button" value="ln" onclick="lan()">
+
+
+                    <input type="button" value="pi" onclick="pi()">
+
+
+                    <input type="button" value="sin" onclick="sine()"><br>
+
+
+                    <input type="button" value="cos" onclick="cos()">
+
+
+                    <input type="button" value="tan" onclick="tan()">
+
+
+                    <input type="button" value="0" onclick="designate('0')">
+
+
+                    <input type="button" value="=" onclick="equal()">
+                </div>
+
+            </div>
+            
+
+
+        </form>
+
+        <button type="button" id="scientif" class="tablinks" onclick="changeMode(event, 'scientific')">scientific</button>
+        <button type="button" id="defaultOpen" class="tablinks" onclick="changeMode(event, 'standard')">standard</button>
+    </div>
+
+
+    <script src="../js/index.js"></script>
+
+
+</body>
+
+
+</html>

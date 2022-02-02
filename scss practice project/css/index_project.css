@@ -1,0 +1,74 @@
+div {
+  height: 600px;
+  width: 600px;
+  display: flex;
+}
+
+.theme-1 {
+  border: 9px solid #a2e5a0;
+  font-size: 60px;
+  border-radius: 20px;
+  background-color: #a2e5a0;
+}
+
+.theme-1 .right {
+  background-color: #b0da4f;
+  border: 1px solid #a2e5a0;
+  border-radius: 10px;
+  color: #76d16e;
+}
+
+.theme-1 .left {
+  background-color: #76d16e;
+  border: 1px solid #a2e5a0;
+  border-radius: 10px;
+  color: #b0da4f;
+  position: relative;
+}
+
+.theme-1 button {
+  position: absolute;
+  background-color: #88ff00;
+  height: 80px;
+  width: 150px;
+  border-radius: 10px;
+  bottom: 20px;
+  color: #76d16e;
+  font-size: large;
+  right: 10px;
+}
+
+.theme-2 {
+  border: 9px solid #ff91e7;
+  font-size: 60px;
+  border-radius: 20px;
+  background-color: #ff91e7;
+}
+
+.theme-2 .right {
+  background-color: #f10db8;
+  border: 1px solid #ff91e7;
+  border-radius: 10px;
+  color: #f39cf3;
+}
+
+.theme-2 .left {
+  background-color: #f39cf3;
+  border: 1px solid #ff91e7;
+  border-radius: 10px;
+  color: #f10db8;
+  position: relative;
+}
+
+.theme-2 button {
+  position: absolute;
+  background-color: #ad10bb;
+  height: 80px;
+  width: 150px;
+  border-radius: 10px;
+  bottom: 20px;
+  color: #f39cf3;
+  font-size: large;
+  right: 10px;
+}
+/*# sourceMappingURL=index_project.css.map */

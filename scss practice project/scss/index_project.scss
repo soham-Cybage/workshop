@@ -1,0 +1,45 @@
+div {
+    height: 600px;
+    width: 600px;
+    display: flex;
+}
+
+
+@mixin color-change($left,$right,$theme,$button,$border){
+.#{$theme} {
+    border: 9px solid $border;
+    font-size: 60px;
+    border-radius: 20px;
+    background-color: $border;
+    .right {
+        background-color: $right;
+        border: 1px solid $border;
+        border-radius: 10px;
+        color: $left;
+    }
+    .left {
+        background-color: $left;
+        border: 1px solid $border;
+        border-radius: 10px;
+        color: $right;
+        position: relative;
+    }
+    button{
+        position: absolute;
+        background-color: $button;
+        height: 80px;
+        width: 150px;
+        border-radius: 10px;
+        bottom: 20px;
+        color: $left;
+        font-size: large;
+        right: 10px;
+        
+    }
+    
+}
+
+}
+
+@include color-change(#76d16e,#b0da4f , theme-1,#88ff00 ,rgb(162, 229, 160) );
+@include color-change(#f39cf3,#f10db8 ,theme-2 , #ad10bb, rgb(255, 145, 231) );

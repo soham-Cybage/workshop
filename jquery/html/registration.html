@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <form id="myForm">
+        <table>
+            <tr>
+                <td>First Name: </td>
+                <td><input type="text" id="first_name" name="first_name" placeholder="first name" minlength="3" maxlength="15"/></td>
+            </tr>
+            <tr>
+                <td>Last Name: </td>
+                <td><input type="text" id="last_name" placeholder="last name"  minlength="5" maxlength="25"/></td>
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td><textarea id="address" rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>Pincode: </td>
+                <td><input type="number" min=0 /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" onclick="validateForm()">Register</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/script.js"></script>
+</body>
+</html>

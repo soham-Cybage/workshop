@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workshop1 </title>
+    <link rel="stylesheet" href="../html css workshop/css/style.css">
+   
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Cybage Academic Library</h1>
+    </div>
+    <div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'AddBook')" id="defaultOpen">Add Book</button>
+            <button class="tablinks" onclick="openCity(event, 'RemoveBook')">Remove Book</button>
+            <button class="tablinks" onclick="openCity(event, 'EditBook')">Edit Book</button>
+            <button class="tablinks" onclick="openCity(event, 'ListOfAllBook')">List Of All Books</button>
+        </div>
+
+        <div id="AddBook" class="tabcontent">
+            <h2>Add Book</h2>
+            <div>
+                <form>
+                    <label for="bid">Book Id</label><br>
+                    <input type="text" name="bid"><br>
+                    <label for="bname">Book Name</label><br>
+                    <input type="text" name="bname"><br>
+                    <label for="aname">Author name:</label><br>
+                    <input type="text" name="aname"><br>
+                    <label for="aname">Date:</label><br>
+                    <input type="date" name="date" value="2022-01-01" min="2022-01-01" max="2022-01-31"><br><br>
+                    <input class="button" type="submit" value="Add Book">
+                </form>
+            </div>
+        </div>
+
+        <div id="RemoveBook" class="tabcontent">
+            <h2>Remove Book</h2>
+            <div>
+                <form>
+                    <label for="bid">Book Id</label><br>
+                    <input type="text" id="bid" name="bid"><br>
+                    <label for="bname">Book Name</label><br>
+                    <input type="text" id="bname" name="bname"><br>
+                    <label for="aname">Author name:</label><br>
+                    <input type="text" id="aname" name="aname"><br>
+                    <label for="aname">Date:</label><br>
+                    <input type="date" name="date" value="2022-01-01" min="2022-01-01" max="2022-01-31"><br><br>
+                    <input class="button" type="submit" value="Remove Book">
+                </form>
+            </div>
+
+        </div>
+
+        <div id="EditBook" class="tabcontent">
+            <h2>Edit Book</h2>
+            <div>
+                <form>
+                    <label for="bid">Book Id</label><br>
+                    <input type="text" id="bid" name="bid"><br>
+                    <label for="bname">Book Name</label><br>
+                    <input type="text" id="bname" name="bname"><br>
+                    <label for="aname">Author name:</label><br>
+                    <input type="text" id="aname" name="aname"><br>
+                    <label for="aname">Date:</label><br>
+                    <input type="date" name="date" value="2022-01-01" min="2022-01-01" max="2022-01-31"><br><br>
+                    <input class="button" type="submit" value="Edit Book">
+                </form>
+            </div>
+        </div>
+        <div id="ListOfAllBook" class="tabcontent">
+            <h2>List Of All Books</h2>
+            <table id="tables">
+                <tr>
+                    <th>Book Id</th>
+                    <th>Book Name</th>
+                    <th>Author name</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>War and Peace</td>
+                    <td>Tolstoy</td>
+                    <td>1 Jan 2022</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shadow of Ladakh</td>
+                    <td>B. Bhattacharia</td>
+                    <td>5 Jan 2022</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Adventures of Sherlock Homes</td>
+                    <td>Arther Canon Doel</td>
+                    <td>6 Jan 2022</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Apple Carte</td>
+                    <td>G. B. Shaw</td>
+                    <td>11 Jan 2022</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/3-old-books-in-a-library-luoman.jpg">
+    </div>
+    <div class="footer">
+        <h4>Cybage Software Pvt. Ltd.</h4>
+    </div>
+
+    <script>
+        function openCity(evt, bname) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(bname).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
